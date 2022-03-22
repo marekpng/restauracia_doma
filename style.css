@@ -373,5 +373,16 @@ content h1{
         width: 100%;
         margin-bottom: 100px;
     }
+    .pizza-banner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-image: url('./img/pizza_background.jpg');
+        background-size:contain;
+        background-position: center;
+        overflow: hidden;
+        /* overflow: scroll; */
+        overflow-y: scroll;
+    }
     
 }
