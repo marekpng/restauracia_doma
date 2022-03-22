@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+/* .bg-image {
+    background-image: url('img/restaurant_background.jpg');
+    background-size: contain;
+    
+    width: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+    font-size: 2.8r
+} */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url('./img/restaurant_background.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    
+}
+
+/* .navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+/* ----------------------------PIZZA----------------------------- */
+.pizza-banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('./img/pizza_background.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    /* overflow: scroll; */
+    overflow-y: scroll;
+}
+
+
+.navbar-pizza {
+    /* background: #161615; */
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar-pizza ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    /* position: relative; */
+    position: absolute;
+    
+}
+.navbar-pizza ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+
+}
+.navbar-pizza ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #aa835e;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: -5px;
+}
+.navbar-pizza ul li:hover::after {
+    width: 100%;
+}
+.content-pizza-menu {
+    width: 100%;
+    position: absolute;
+    /* top: 20%; */
+    left: 15%;
+    /* transform: translateY(-50%); */
+    /* text-align: center; */
+    color: #fff;
+    margin-top: 75px;
+    
+    
+}
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    /* min-width: auto; */
+    border-radius: 5px 5px 0 0;
+    
+    box-shadow: 0 0 20px rgba(238, 221, 221, 0.15);
+    
+    
+    
+} 
+.content-table thead tr {
+    background-color: #aa835e;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+
+}
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #3a3a3a;
+    opacity: 0.9;
+}
+.content-table tbody tr:nth-of-type(odd) {
+    background-color: #000000;
+    opacity: 0.9;
+
+}
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #aa835e;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #aa835e;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: -5px;
+}
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+content h1{
+    font-size: 70px;
+    margin-top: 80px;
+
+}
+.content p {
+    margin: 20px
+
+}
+.main {
+    display: inline-block; 
+    
+    
+}
+.btn-main {
+    background-color: #805413; /* Green */
+    border: 1px solid ;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 15px;
+    
+}
+.logo {
+    color: #fff;
+    font-size: x-large;
+    width: fit-content;   
+}
+
+.btn-main:hover {
+    background-color: #aa835e;
+    cursor: pointer;
+}
+
+
+
+
+/* novy navbar  */
+/* -----------------NAVBAR------------------ */
+
+/* Scroll */
+.scroll-down .navbar {
+    transform: translate3d(0, -100%, 0);
+    
+
+}
+.scroll-up .navbar{
+    
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 24px;
+    position: fixed;
+    width: 95%;
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
+    font-size: larger;
+
+    
+    padding: 35px 0;
+        
+    
+
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav-brand {
+    
+    margin: auto 1rem;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+    
+}
+
+.nav-link:hover{
+    color: #aa835e;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    overflow: hidden;
+    
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+@media(max-width: 821px) {
+    
+    .hamburger {
+        display: block;
+        
+        
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+        position: fixed;
+        Left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        
+        background-color: #61422d;
+        width: 100%;
+        text-align: center;
+        transform: 0.3s;
+    }
+    
+    
+    .nav-item {
+        margin: 16px 0;
+
+    }
+    
+    .nav-menu.active {
+        Left: 0;
+        margin: 20px 0px;
+        padding: 20px 0;
+
+    }
+    .navbar {
+        margin: 0;
+        width: 90%;
+        
+    }
+    
+
+}
+
+@media(max-width: 500px) {
+    .content-table  {
+        width: 5px;
+    }
+    /* .content-table, .content-table tbody, .content-table tr, .content-table td {
+        display: block;
+        width: 100%;
+
+    }  */
+    .content-pizza-menu {
+        left: 0;
+        
+    }
+
+    .navbar-pizza{
+        background: #000000;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    
+}
