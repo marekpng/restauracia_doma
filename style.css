@@ -443,16 +443,16 @@ content h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 24px;
+    /* margin: 0 24px; */
     position: fixed;
-    /* width: 95%; */
+    width: 100%;
     z-index: 9999;
     transition: all 300ms ease-in-out;
     font-size: larger;
-    
+    /* margin-right: 150px; */
     
     padding: 35px 0;
-        
+    background-color: #141414;
     
 
 }
@@ -462,6 +462,7 @@ content h1{
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+    margin-right: 1.5rem;
 }
 .nav-brand {
     font-weight:800px;
@@ -487,7 +488,7 @@ content h1{
     display: none;
     cursor: pointer;
     overflow: hidden;
-    padding-right: .5rem;
+    
 }
 .bar {
     display: block;
@@ -510,7 +511,8 @@ content h1{
     
     .hamburger {
         display: block;
-        
+        background-color: #141414;
+        margin-right: 0.5rem;
         
     }
 
@@ -534,6 +536,7 @@ content h1{
         width: 100%;
         text-align: center;
         transform: 0.3s;
+        
     }
     
     
@@ -552,7 +555,7 @@ content h1{
     .navbar {
         margin: 0;
         width: 100%;
-        background-color: #161616;
+        
     }
     .flex-columns {
         display: grid;
