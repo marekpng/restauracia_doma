@@ -152,6 +152,73 @@ a{
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #aa835e;
 }
+.prilohy-pizza{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+span {
+    font-weight: bold;
+}
+/* -------------------KONTAKT-------------------- */
+.flex-columns .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+
+}
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    
+    color: rgb(243, 236, 236);
+}
+.me-photo {
+    
+    width: 50%;
+    height: 70%;
+    
+    object-fit: cover;
+    border-radius: 150px;
+    
+}
+
+.flex-columns .column .column-1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-columns .column .column-2{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-columns .column-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+    
+    line-height: 1.8rem;
+    font-size: larger;
+}
+.number {
+    display: flex;
+    width: 100%;
+    height: 25vh;
+    position:absolute ;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    
+}
 /* -------------------DENNE MENU---------------- */
 .banner{
     width: 100%;
@@ -487,6 +554,23 @@ content h1{
         width: 90%;
         
     }
+    .flex-columns {
+        display: grid;
+        grid-template-rows:max-content;
+        
+        justify-content: center;
+        
+        height: 100%;
+        margin: 0 0;
+    }
+    .flex-columns .row{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    
+    
+    }
+    
     
 
 }
