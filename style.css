@@ -376,7 +376,7 @@ span {
 .content {
     width: 100%;
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
@@ -555,6 +555,7 @@ content h1{
     .navbar {
         margin: 0;
         width: 100%;
+        margin-bottom: 15px;
         
     }
     .flex-columns {
